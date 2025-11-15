@@ -1898,33 +1898,108 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
   .project-modal-content {
     position: relative;
-    background: #D4B95C;
+    background: var(--bg-gradient-jet);
+    border: 1px solid var(--jet);
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 20px;
     width: 90%;
     max-width: 700px;
     z-index: 2;
-    color: white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    color: var(--light-gray);
+    box-shadow: var(--shadow-5);
+  }
+  .project-modal-content::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
   }
   .project-modal-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
+    top: 15px;
+    right: 15px;
+    background: var(--border-gradient-onyx);
     border: none;
-    font-size: 28px;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: var(--luxury-gold);
     cursor: pointer;
-    color: white;
+    transition: var(--transition-1);
+    z-index: 1;
   }
+  .project-modal-close::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+  }
+  .project-modal-close:hover {
+    background: var(--bg-gradient-gold-1);
+  }
+  .project-modal-close:hover::before {
+    background: var(--bg-gradient-gold-2);
+  }
+  
   .report-btn {
-    display:block;
-    margin-top:20px;
-    padding:10px 20px;
-    background:#D4B95C;
-    color:#fff;
-    border-radius:8px;
-    text-align:center;
+    display: block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #000000;
+    color: var(--white-1);
+    border-radius: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: var(--fw-600);
+    font-size: var(--fs-5);
+    transition: var(--transition-1);
+    border: #F2C94C;
+    box-shadow: var(--shadow-2);
+  }
+  
+  .report-btn:hover {
+    background: #807b6d;
+    color: var(--white-1);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-4);
+  }
+  
+  /* Version avec icône PDF */
+  .report-btn.pdf-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .report-btn.pdf-icon::before {
+    content: "📋";
+    font-size: var(--fs-4);
+  }
+  
+  /* Styles pour le contenu de la modale */
+  #modalProjectTitle {
+    color: var(--light-gray);
+    font-size: var(--fs-2);
+    font-weight: var(--fw-600);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--jet);
+  }
+  
+  #modalProjectVideo,
+  #modalProjectImage {
+    border-radius: 12px;
+    border: 1px solid var(--jet);
+    box-shadow: var(--shadow-2);
   }
   
 

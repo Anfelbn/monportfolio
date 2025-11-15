@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/moipic.jpg" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Benzaoui Anfel</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:anfelbenzaoui12@gmail.com" class="contact-link">anfelbenzaoui12@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">0795290688</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">April 09, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address> Constantine, Algeria</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Passionate about web development and artificial intelligence.
+          </p>
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, 
+            Currently pursuing a Master's in Data Engineering and Web Development at Ferhat Abbas University, Sétif, Algeria. I have over four years of experience building dynamic and innovative web solutions.
+          </p>
+        </section>
+
+
+         <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            
+
+            
+
+          </section>
+
+        </div>
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Baccalaureate in Mathematics</h4>
+
+              <span>2020 — 2021</span>
+
+              <p class="timeline-text">
+                El-bachir gassab, eulma, setif
+             
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor's Degree in Computer Science</h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                University of Ferhat Abbas, Sétif, Algeria
+              </p>
+
+            </li>
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Master2 in Data Engineering and Web Technology</h4>
+
+              <span>2025 — 2026</span>
+
+              <p class="timeline-text">
+                University of Ferhat Abbas, Sétif, Algeria.
+              </p>
+
+            </li>
+
+            
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Internship at National Sanitation Office</h4>
+
+              <span>Mar 2024 – Apr 2024</span>
+
+              <p class="timeline-text">
+                Human Resources and Accounting Assistant
+                Human Resources
+                • Add new employee entries
+                • Payroll generation for all employees
+                Accounting
+                • Learned to interpret financial statements
+                • Used software to calculate monthly income
+                Inventory Management
+                • Managed overstock and out-of-stock scenarios
+                • Reduced storage and inventory management costs while ensuring product availability</p>
+
+            </li>
+
+            
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web developer</h4>
+
+              <span>2022 — 2025</span>
+
+              <p class="timeline-text">
+                Building dynamic, responsive, and efficient web applications with a focus on clean design and functionality.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Javascript</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CSS</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">PHP</h5>
+                  <data value="80">80%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+  
+              </li>
+
+
+            <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">C++/JAVA</h5>
+                  <data value="50">50%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%;"></div>
+                </div>
+  
+              </li>
+              
+
+
+          </ul>
+
+
+        </section>
+
+        <section class="tool">
+
+            <h3 class="h3 tools-title">Tools</h3>
+  
+            <ul class="tools-list content-card">
+  
+              <li class="tools-item">
+  
+                <div class="title-wrapper">
+                  <h5 class="h5">Blender</h5>
+                  <data value="75">75%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+  
+              </li>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <h5 class="h5">Adobe xd</h5>
+                  <data value="90">90%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+  
+              </li>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <h5 class="h5">Android Studio</h5>
+                  <data value="60">60%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%;"></div>
+                </div>
+  
+              </li>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <h5 class="h5">Microsoft tools</h5>
+                  <data value="70">70%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+  
+              </li>
+  
+            </ul>
+  
+  
+          </section>
+
+          <section class="op">
+
+            <h3 class="h3 op-title">Operating Systems</h3>
+  
+            <ul class="op-list content-card">
+  
+              <li class="op-item">
+  
+                <div class="title-wrapper">
+                  <h5 class="h5">windows</h5>
+                  <data value="99">99%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 99%;"></div>
+                </div>
+  
+              </li>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <h5 class="h5">Macos</h5>
+                  <data value="100">100%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%;"></div>
+                </div>
+  
+              </li>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <h5 class="h5">Ubuntu</h5>
+                  <data value="60">60%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%;"></div>
+                </div>
+  
+              </li>
+  
+              <li class="skills-item">
+  
+                <div class="title-wrapper">
+                  <h5 class="h5">Kali Linux</h5>
+                  <data value="70">70%</data>
+                </div>
+  
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+  
+              </li>
+  
+            </ul>
+  
+  
+          </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+      
+        <section class="projects">
+      
+          <ul class="filter-list">
+            <li class="filter-item"><button data-filter-btn>W3D</button></li>
+            
+          </ul>
+      
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+      
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>W3D</button></li>
+              
+            </ul>
+          </div>
+      
+          <ul class="project-list">
+      
+            <!-- W3D Project 1 -->
+            <li class="project-item active" data-filter-item data-category="w3d">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box open-project"
+                       data-video="./assets/images/renderanimtp2.mp4"
+                       data-report="./assets/reports/tp1.pdf"
+                       data-title="TP W3D 1">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/2nd3dtp.png" alt="w3d project 1" loading="lazy">
+                </figure>
+                <h3 class="project-title">Projet W3D 1</h3>
+                <p class="project-category">W3D</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="w3d">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box open-project"
+                       data-image="./assets/images/first3dtp.png"
+                       data-report="./assets/reports/tp1.pdf"
+                       data-title="TP W3D 2">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/first3dtp.png" alt="w3d project 2" loading="lazy">
+                </figure>
+                <h3 class="project-title">Projet W3D 2</h3>
+                <p class="project-category">W3D</p>
+              </a>
+            </li>
+      
+          </ul>
+      
+            
+      
+        </section>
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://maps.app.goo.gl/BeWWdXx8MHfJorgd9?g_st=ipc"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- Project Modal -->
+  <div class="project-modal" id="projectModal">
+    <div class="project-modal-overlay" id="projectModalOverlay"></div>
+    <div class="project-modal-content">
+      <button class="project-modal-close" id="projectModalClose">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <h3 id="modalProjectTitle"></h3>
+      <video id="modalProjectVideo" controls style="width:100%; border-radius:10px; margin-top:10px;">
+        <source id="modalVideoSource" src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <img id="modalProjectImage" src="" alt="" style="width:100%; border-radius:10px; margin-top:10px; display:none;">
+      
+      <a id="modalProjectReport" href="#" target="_blank" class="report-btn"
+         style="display:block; margin-top:20px; padding:10px 20px; background:#6c63ff; color:#fff; border-radius:8px; text-align:center;">
+         Voir le rapport PDF
+      </a>
+    </div>
+  </div>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script>
+    // Script pour gérer l'affichage de la modale avec vidéo/image et rapport
+    document.addEventListener('DOMContentLoaded', function() {
+      const projectIcons = document.querySelectorAll(".open-project");
+      const modal = document.getElementById("projectModal");
+      const modalOverlay = document.getElementById("projectModalOverlay");
+      const modalClose = document.getElementById("projectModalClose");
+      const modalTitle = document.getElementById("modalProjectTitle");
+      const modalVideo = document.getElementById("modalProjectVideo");
+      const modalVideoSource = document.getElementById("modalVideoSource");
+      const modalImage = document.getElementById("modalProjectImage");
+      const modalReport = document.getElementById("modalProjectReport");
+
+      projectIcons.forEach(icon => {
+        icon.addEventListener("click", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          // Récupérer les données
+          const title = this.dataset.title;
+          const videoSrc = this.dataset.video;
+          const imageSrc = this.dataset.image;
+          const reportSrc = this.dataset.report;
+          
+          // Mettre à jour la modale
+          modalTitle.textContent = title;
+          modalReport.href = reportSrc;
+          
+          // Gérer l'affichage vidéo ou image
+          if (videoSrc) {
+            // Afficher la vidéo et cacher l'image
+            modalVideoSource.src = videoSrc;
+            modalVideo.load();
+            modalVideo.style.display = 'block';
+            modalImage.style.display = 'none';
+          } else if (imageSrc) {
+            // Afficher l'image et cacher la vidéo
+            modalImage.src = imageSrc;
+            modalImage.style.display = 'block';
+            modalVideo.style.display = 'none';
+            modalVideo.pause(); // Arrêter toute vidéo en cours
+          }
+          
+          // Afficher la modale
+          modal.classList.add("active");
+        });
+      });
+
+      modalClose.addEventListener("click", () => {
+        modal.classList.remove("active");
+        modalVideo.pause(); // Arrêter la vidéo quand on ferme la modale
+      });
+
+      modalOverlay.addEventListener("click", () => {
+        modal.classList.remove("active");
+        modalVideo.pause(); // Arrêter la vidéo quand on ferme la modale
+      });
+    });
+  </script>
+  
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
